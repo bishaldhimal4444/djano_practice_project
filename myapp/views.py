@@ -24,3 +24,4 @@ def anotherurl(request):
     text = request.POST['text']
     amount_words = len(text.split())
     return render(request, 'anotherurl.html', {'amount': amount_words})
+

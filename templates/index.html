@@ -1,4 +1,8 @@
-<h1>Welcome To The Page.</h1>
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'style.css' %}">
+
+<h1>Welcome To The Page.</h1> 
 <h2>Personal Details:</h2>
 <p>Name: {{firstname}} {{lastname}}</p>
 <p>Age: {{age}}</p>
