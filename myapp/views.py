@@ -21,6 +21,6 @@ def index(request):
 
 
 def anotherurl(request):
-    text = request.GET['text']
+    text = request.POST['text']
     amount_words = len(text.split())
     return render(request, 'anotherurl.html', {'amount': amount_words})

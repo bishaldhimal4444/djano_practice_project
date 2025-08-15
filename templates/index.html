@@ -13,7 +13,8 @@
 
 
 <h1>Write Your Message Below:</h1>
-<form method="" action="anotherurl">
+<form method="POST" action="anotherurl">
+    {% csrf_token %}
     <textarea name='text' rows="25" cols="50"></textarea> 
     <br>
     <br>
